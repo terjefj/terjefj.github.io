@@ -12,8 +12,8 @@
    
 
 <div>
-  <h1>Hvor lenge er det til sommerfesten?</h1>
-    <h1 id="demo"></h1>
+  <h3>Hvor lenge er det til sommerfesten?</h3>
+    <h3 id="demo"></h3>
   </div>
 <script>
 // Set the date we're counting down to
@@ -35,8 +35,8 @@ var x = setInterval(function() {
   var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
   // Display the result in the element with id="demo"
-  document.getElementById("demo").innerHTML = "bare " + days + " Dager " + hours + " Timer "
-  + minutes + " Minutter  " + seconds + " Sekunder igjen!!";
+  document.getElementById("demo").innerHTML = "bare " + days + " d " + hours + " t "
+  + minutes + " m  " + seconds + " s igjen!!";
 
   // If the count down is finished, write some text
   if (distance < 0) {
